@@ -20,5 +20,14 @@ pipeline {
                 '''
             }
         }
+        stage('Test') {
+            steps {
+                echo 'Testing the git repo'
+                sh '''
+                    npm test
+                    echo "a"
+                '''
+            }
+        }
     }
 }
