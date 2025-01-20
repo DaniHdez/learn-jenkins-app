@@ -31,8 +31,7 @@ pipeline {
                 echo 'Testing the git repo'
                 sh '''
                     test -f src/index.js
-                    #npm test
-                    #echo "a"
+                    npm test
                 '''
             }
         }
